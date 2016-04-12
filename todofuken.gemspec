@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Masataka Kuwabara"]
   spec.email         = ["p.ck.t22@gmail.com"]
 
-  spec.summary       = %q{to do: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{to do: Write a longer description or delete this line.}
+  spec.summary       = %q{Create a master table of Japanese Prefectures for Rails}
+  spec.description   = %q{Create a master table of Japanese Prefectures for Rails}
   spec.homepage      = "https://github.com/pocke/todofuken"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
