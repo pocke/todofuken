@@ -1,8 +1,10 @@
-# Todofuken
+Todofuken
+==========
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/todofuken`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Gem Version](https://badge.fury.io/rb/todofuken.svg)](https://badge.fury.io/rb/todofuken)
 
-TODO: Delete this and the text above, and describe your gem
+Create a master table of Japanese Prefectures for Ruby on Rails as a generator.
+
 
 ## Installation
 
@@ -16,13 +18,29 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install todofuken
 
 ## Usage
 
-TODO: Write usage instructions here
+Execute the following command.
+
+```sh
+$ rails generate todofuken:install prefecture
+    generate  model
+      invoke  active_record
+      create    db/migrate/20160412112336_create_prefectures.rb
+      create    app/models/prefecture.rb
+      invoke    rspec
+      create      spec/models/prefecture_spec.rb
+      invoke      factory_girl
+      create        spec/factories/prefectures.rb
+      insert  db/seeds.rb
+$ rake db:migrate db:seed
+```
+
+This gem create a model and seed data.
+
+
+You can remove this gem from your application after `rails generate`.
 
 ## Development
 
@@ -32,5 +50,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/todofuken.
+Bug reports and pull requests are welcome on GitHub at https://github.com/pocke/todofuken.
 
+## Link
+
+- [都道府県のマスタテーブルを作るGemを作った - pockestrap](http://pocke.hatenablog.com/entry/2016/04/12/210234)
